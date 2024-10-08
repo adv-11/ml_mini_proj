@@ -241,4 +241,9 @@ with st.expander('Results:'):
         c2.image('results/output_zoom_6.png')
 
 
+st.link_button("Check out the Github Repo !", "https://github.com/adv-11/ml_mini_proj")
+input = st.button ('Click me to view Report ! ')
+if input:
+    st.write('Report Coming Soon')
+
 
