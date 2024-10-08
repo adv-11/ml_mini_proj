@@ -38,22 +38,22 @@ st.subheader('Implementation')
 
 with st.expander('Dataset Exploration :'):
     st.write('Dataframe Head: ')
-    st.image('plots_and_ss\image1.png')
+    st.image('plots_and_ss/image1.png')
 
     st.write('Dataframe Shape: ')
     st.write('(3993, 6)')
 
     st.write('Dataset Description : ')
-    st.image('plots_and_ss\image2.png')
+    st.image('plots_and_ss/image2.png')
 
     st.write('Dataframe Information: ')
-    st.image('plots_and_ss\image3.png')
+    st.image('plots_and_ss/image3.png')
 
     st.write('Target Variable (Closing Price) vs Adj Close of Random Company from BSE')
-    st.image('plots_and_ss\output1.png')
+    st.image('plots_and_ss/output1.png')
 
     st.write('Number of stocks sold by a Random Company ')
-    st.image('plots_and_ss\output2.png')
+    st.image('plots_and_ss/output2.png')
 
 with st.expander('Feature Engineering: '):
     st.subheader('1. Moving Average (MA) Feature Addition')
@@ -66,13 +66,13 @@ with st.expander('Feature Engineering: '):
     100-day and 365-day MAs: Longer-term trends, with 365 days typically representing a full year's worth of trading data.''')
 
     st.write ('**Sample plot of Random Stock MA for 10 days**')
-    st.image('plots_and_ss\output3.png')
+    st.image('plots_and_ss/output3.png')
 
     st.write('**Sample plot of Random Stock MA for 365 days** ')
-    st.image('plots_and_ss\output5.png')
+    st.image('plots_and_ss/output5.png')
 
     st.write('All MA combined: ')
-    st.image('plots_and_ss\output6.png')
+    st.image('plots_and_ss/output6.png')
 
     st.write(' ')
 
@@ -191,27 +191,27 @@ with st.expander('Results:'):
 
     with st.container():
         c1.subheader('Close Price Predictions')
-        c1.image('results\output1.png')
+        c1.image('results/output1.png')
         c1.write(' RMSE: 1.215 ')
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
-        c1.image('results\output2.png')
+        c1.image('results/output2.png')
         c1.write(' RMSE: 3.660 ')
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
-        c1.image('results\output3.png')
+        c1.image('results/output3.png')
         c1.write(' RMSE: 0.194 ')
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
-        c1.image('results\output4.png')
+        c1.image('results/output4.png')
         c1.write(' RMSE: 0.181 ')
         
         
@@ -219,7 +219,7 @@ with st.expander('Results:'):
         c1.write(' ')
         c1.write(' ')
         c1.write(' ')
-        c1.image('results\output5.png')   
+        c1.image('results/output5.png')   
         c1.write(' RMSE: 0.465')
         
         c1.write(' ')
@@ -228,17 +228,17 @@ with st.expander('Results:'):
         c1.write(' ')
         c1.write(' ')
         
-        c1.image('results\output6.png')  
+        c1.image('results/output6.png')  
         c1.write('RMSE: 1.508') 
     
     with st.container():
         c2.subheader('Zoomed Predictions')
-        c2.image('results\output_zoom_1.png')
-        c2.image('results\output_zoom_2.png')
-        c2.image('results\output_zoom_3.png')
-        c2.image('results\output_zoom_4.png')
-        c2.image('results\output_zoom_5.png')
-        c2.image('results\output_zoom_6.png')
+        c2.image('results/output_zoom_1.png')
+        c2.image('results/output_zoom_2.png')
+        c2.image('results/output_zoom_3.png')
+        c2.image('results/output_zoom_4.png')
+        c2.image('results/output_zoom_5.png')
+        c2.image('results/output_zoom_6.png')
 
 
 
