@@ -56,7 +56,7 @@ with st.expander('Dataset Exploration :'):
     st.image('plots_and_ss\output2.png')
 
 with st.expander('Feature Engineering: '):
-    st.write('1. Moving Average (MA) Feature Addition')
+    st.subheader('1. Moving Average (MA) Feature Addition')
     st.markdown('''These values represent moving average (MA) periods in terms of trading days. The moving average is commonly used in financial analysis to smooth out price data and identify trends over different time frames. 
                 
     10-day MA: A short-term trend indicator (often used for immediate trading decisions).
@@ -76,7 +76,7 @@ with st.expander('Feature Engineering: '):
 
     st.write(' ')
 
-    st.write('2. Daily Return Feature : ')
+    st.subheader('2. Daily Return Feature : ')
     st.markdown('''Daily Return= 
 
 (Current Day Adj Close - Previou Days Adj Close) / Previous Day's Adj Close x 100''')
@@ -182,7 +182,63 @@ The second LSTM layer has 64 units, followed by two dense layers for regression 
              
 The model is compiled using the Adam optimizer and the mean squared error loss function.''')
 
+    st.subheader('Step 6: Predictions!')
+    st.write('Create Test Dataset and Predict the Results.')
 
+
+with st.expander('Results:'):
+    c1, c2 = st.columns(2)
+
+    with st.container():
+        c1.subheader('Close Price Predictions')
+        c1.image('results\output1.png')
+        c1.write(' RMSE: 1.215 ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.image('results\output2.png')
+        c1.write(' RMSE: 3.660 ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.image('results\output3.png')
+        c1.write(' RMSE: 0.194 ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.image('results\output4.png')
+        c1.write(' RMSE: 0.181 ')
+        
+        
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.image('results\output5.png')   
+        c1.write(' RMSE: 0.465')
+        
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        c1.write(' ')
+        
+        c1.image('results\output6.png')  
+        c1.write('RMSE: 1.508') 
+    
+    with st.container():
+        c2.subheader('Zoomed Predictions')
+        c2.image('results\output_zoom_1.png')
+        c2.image('results\output_zoom_2.png')
+        c2.image('results\output_zoom_3.png')
+        c2.image('results\output_zoom_4.png')
+        c2.image('results\output_zoom_5.png')
+        c2.image('results\output_zoom_6.png')
 
 
 
