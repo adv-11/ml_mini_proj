@@ -248,10 +248,9 @@ st.link_button("Check out the Report !", "https://github.com/adv-11/ml_mini_proj
 pdf_file_path = "pdf/report.pdf"
 
 with open(pdf_file_path, "rb") as pdf_file:
-    # Read the PDF file as binary
+
     pdf_bytes = pdf_file.read()
     
-    # Provide a download button for the PDF
-    st.download_button(label="Download PDF", data=pdf_bytes, file_name="report.pdf", mime="application/pdf")
+    st.download_button(label="Download Report !", data=pdf_bytes, file_name="report.pdf", mime="application/pdf")
     
 
