@@ -1,4 +1,6 @@
 import streamlit as st
+import base64
+
 st.title('ML- Mini Project')
 
 st.header('Stock Market Prediction')
@@ -243,7 +245,18 @@ with st.expander('Results:'):
 
 st.link_button("Check out the Github Repo !", "https://github.com/adv-11/ml_mini_proj")
 input = st.button ('Click me to view Report ! ')
+pdf_file_path = "pdf/report.pdf"
 if input:
-    st.write('Report Coming Soon')
-
+    
+    with open(pdf_file_path, "rb") as pdf_file:
+    
+        pdf_data = pdf_file.read()
+        
+       
+        base64_pdf = base64.b64encode(pdf_data).decode('utf-8')
+        
+        
+        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
+        
+        st.markdown(pdf_display, unsafe_allow_html=True)
 

@@ -5,3 +5,4 @@ matplotlib
 tensorflow
 keras
 scikit-learn
+base64
